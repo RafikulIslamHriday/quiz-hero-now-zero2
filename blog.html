@@ -1,12 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-</head>
-<body>
-    <h1>Blog</h1>
-</body>
+    <!-- bootstarp cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="text-center p-2">Welcome To Blog Hero</h2>
+    </header>
+    <main>
+      <section class="container p-3">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button fs-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+              ##  What is the difference between map() , forEach(), filter(),
+                find()
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-5">
+                <p>
+                  1. map() : It creates a new array by applying a callback
+                  function to each element of the original array. It returns a
+                  new array with the same length as the original array, but with
+                  each element transformed by the callback function.
+                </p>
+                <p>
+                  2. forEach() : It loops through each element of an array and
+                  executes a callback function for each element. It doesn't
+                  return anything.
+                </p>
+
+                <p>
+                  3. filter: It creates a new array by filtering out elements
+                  from the original array based on a condition specified in the
+                  callback function. It returns a new array with only the
+                  elements that pass the condition.
+                </p>
+                <p>
+                  4. find(): It returns the first element in an array that
+                  satisfies a specified condition. It returns the element
+                  itself, not an array
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed fs-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ## What are the difference between Local storage, session storage,
+                and cookies?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-5">
+                <p>
+                  1. Local Storage: Local storage is a mechanism to store
+                  key-value pairs in the user's browser that persists even after
+                  the browser is closed. The data is stored in the form of
+                  strings and can only be accessed by the website that created
+                  it. Local storage has a larger capacity than cookies and is
+                  often used to store non-sensitive data like user preferences
+                  or application state.
+                </p>
+                <p>
+                  2. Session Storage: Session storage is similar to local
+                  storage, but the data stored in session storage is only
+                  available for the duration of the browser session. When the
+                  user closes the browser, the data is deleted. This makes it a
+                  good option for storing sensitive data like user login
+                  information or shopping cart details.
+                </p>
+                <p>
+                  3. Cookies: Cookies are small text files that are stored on
+                  the user's computer by a website. Cookies can be accessed by
+                  the website that created them as well as any other website
+                  that the user visits that is associated with the cookie.
+                  Cookies have a limited size, so they are often used to store
+                  small amounts of data like user preferences or tracking
+                  information.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed fs-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+               ## What is even loop and how it works?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body fs-5">
+                <p>
+                  An event loop is a construct that allows a program to handle
+                  multiple tasks simultaneously, without having to wait for each
+                  one to complete before moving on to the next. It does this by
+                  managing a queue of tasks or events, and executing each one in
+                  turn as soon as it becomes ready.
+                </p>
+                <span>an event loop works:</span>
+                <p>
+                  1. The program adds tasks to the event queue as they arise,
+                  along with a callback function that should be executed when
+                  the task is completed. 2. The event loop continually checks
+                  the queue for the next task. If there is no task available, it
+                  enters a "waiting" state, where it will remain until a new
+                  task is added to the queue. 3. When a task becomes ready (e.g.
+                  a network request completes), the event loop removes the task
+                  from the queue and executes its associated callback function.
+                  4.The program can continue to add new tasks to the queue at
+                  any time, and the event loop will continue to handle them as
+                  they become ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
